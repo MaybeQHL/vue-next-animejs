@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "esnext",
+        "target": "esnext",
+        "noImplicitAny": false,
+        "removeComments": false,
+        "sourceMap": true,
+        "declaration": true,
+        "downlevelIteration": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es5",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "dom",
+            "esnext"
+        ],
+        "declarationDir": "dist/types",
+        "outDir": "dist/lib"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "example"
+    ]
+}
