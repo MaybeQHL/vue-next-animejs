@@ -1,5 +1,5 @@
 <template>
-  <h2>composition-demo</h2>
+  <h2>options-demo</h2>
   <div class="block" v-anime="{ translateX: 100 }"></div>
   <div class="block" id="test1"></div>
   <div class="block" id="test2"></div>
@@ -8,22 +8,18 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
-import anime from "animejs";
 export default defineComponent({
   name: "App",
   components: {},
-  setup() {
-    onMounted(() => {
-      anime({
-        targets: "#test1",
-        translateX: 120,
-      });
-      anime({
-        targets: "#test2",
-        translateX: 150,
-      });
+  mounted() {
+    this.$anime({
+      targets: "#test1",
+      translateX: 120,
     });
-    return {};
+    this.$anime({
+      targets: "#test2",
+      translateX: 150,
+    });
   },
 });
 </script>

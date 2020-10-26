@@ -4,7 +4,6 @@ import json from '@rollup/plugin-json';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
-// import babel from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
 
 import { terser } from 'rollup-plugin-terser';
@@ -41,14 +40,8 @@ export default {
         json(),
         resolve(),
         commonjs(),
-
         // Compile TypeScript files
         typescript({ useTsconfigDeclarationDir: true }),
-        // babel({
-        //     babelHelpers: 'runtime',
-        //     extensions: ['.js', '.ts'],
-        //     exclude: 'node_modules/**' // only transpile our source code
-        // })
         terser(),
     ],
 }
