@@ -1,6 +1,6 @@
 {
   "name": "@maybecode/vue-next-animejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,8 @@
   "scripts": {
     "build": "npm run rmdist && rollup -c ",
     "rmdist": "rimraf dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub":"npm publish --access=public"
   },
   "dependencies": {},
   "devDependencies": {
@@ -31,8 +32,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:null_639_5368/vue-next-animejs.git"
+    "url": "https://gitee.com/null_639_5368/vue-next-animejs.git"
   },
+  "homepage": "https://gitee.com/null_639_5368/vue-next-animejs",
   "author": "Maybe",
   "license": "MIT"
 }
