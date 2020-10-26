@@ -8,7 +8,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from "vue";
-import anime from "animejs";
+import { anime } from "@maybecode/vue-next-animejs";
 export default defineComponent({
   name: "App",
   components: {},

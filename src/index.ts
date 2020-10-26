@@ -8,6 +8,7 @@ import animejs from 'animejs'
 
 import { App } from "vue";
 
+
 function install(app: App, options: any) {
     // in template use `v-anime` call 
     app.directive('anime', {
@@ -20,12 +21,17 @@ function install(app: App, options: any) {
             animejs(opts);
         }
     });
-    app.config.globalProperties.$anime = animejs;
+    app.config.globalProperties.$anime = function (params: animejs.AnimeParams) {
+        return animejs(params);
+    };
 }
 export default {
     install
 }
+
+export type AnimeFn = (par: animejs.AnimeParams) => animejs.AnimeInstance;
+
 // provide  for  composition api call
-export const anime = animejs;
+export const anime: AnimeFn = (par: animejs.AnimeParams) => animejs(par);
 
 

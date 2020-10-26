@@ -14,7 +14,6 @@
 ```
 npm install @maybecode/vue-next-animejs 
 
-npm install animejs 
 ```
 
 ```
@@ -53,18 +52,20 @@ export default {
 
 ```
 // global-properties.d.ts
-import anime from "animejs";
+
+import { AnimeFn } from '@maybecode/vue-next-animejs'
+
 
 declare module '@vue/runtime-core' {
     interface ComponentCustomProperties {
-        $anime: anime.AnimeInstance;
+        $anime: AnimeFn
     }
 }
 ```
 ### composition api 
 ***
 ```
-import anime from "animejs";
+import { anime } from "@maybecode/vue-next-animejs";
 export default {
  setup() {
     onMounted(() => {
