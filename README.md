@@ -1,9 +1,12 @@
-# vue-next-animejs
+# 🌟vue-next-animejs
 
 ## Introduction
   * Vue3 directive  for animejs
   * base on animejs
 
+[![npm](https://img.shields.io/npm/v/@maybecode/vue-next-animejs.svg)](https://www.npmjs.com/package/@maybecode/vue-next-animejs)
+[![npm](https://img.shields.io/npm/dt/@maybecode/vue-next-animejs.svg)](https://www.npmjs.com/package/@maybecode/vue-next-animejs)
+[![npm](https://img.shields.io/bundlephobia/min/@maybecode/vue-next-animejs.svg)](https://www.npmjs.com/package/@maybecode/vue-next-animejs)
 ## Demo
 [demo](http://null_639_5368.gitee.io/vue-next-animejs)
 
