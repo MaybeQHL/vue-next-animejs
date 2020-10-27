@@ -6,6 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@maybecode/vue-next-animejs": "^1.0.5",
     "vue": "^3.0.0"
   },
   "devDependencies": {

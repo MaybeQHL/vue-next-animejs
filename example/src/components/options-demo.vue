@@ -1,9 +1,9 @@
 <template>
-  <h2>options-demo</h2>
+  <h2 class="title">options-demo</h2>
+  <hr />
   <div class="block" v-anime="{ translateX: 100 }"></div>
   <div class="block" id="test1"></div>
   <div class="block" id="test2"></div>
-  <hr />
 </template>
 
 <script lang="ts">
@@ -23,10 +23,3 @@ export default defineComponent({
   },
 });
 </script>
-<style>
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: orange;
-}
-</style>
